@@ -37,11 +37,11 @@ public class A1Jedi {
 				for (int b = 0; b < storeItems; b++) {
 					if (givenItem.equals(nameItems[b])) {
 						foundItem = b;
+						customerQuantity[foundItem] = customerQuantity[foundItem] + 1;
 					}
 				}
 
 				itemQuantity[foundItem] = itemQuantity[foundItem] + quantity;
-				customerQuantity[foundItem] = customerQuantity[foundItem] + 1;
 			}
 
 		}
